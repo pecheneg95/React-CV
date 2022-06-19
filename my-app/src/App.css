@@ -1,12 +1,6 @@
-.App {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  min-width: 320px;
-  width: 100vw;
-  min-height: 100vh;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
 li {
   list-style: none;
 }
@@ -18,89 +12,216 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
+  min-width: 320px;
+  background-color: darkgrey;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
 }
-
-.header {
-  display: flex;
-  height: 100px;
-  width: 100%;
-  background: darkcyan;
-}
-
-.navigation {
-  display: flex;
-  justify-content: flex-end;
+#root {
+  height: 100%;
   width: 100%;
 }
-
-.navigation-list {
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+.main {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 20px;
-  margin-right: 40px;
-}
-
-.navigation-list-item {
-  font-size: 24px;
-}
-
-.navigation-list-link {
-  position: relative;
-  color: white; /*задаём цвет ссылки*/
-  cursor: pointer;
-  line-height: 2; /*задаём высоту строки*/
-  text-decoration: none; /*убираем подчёркивание*/
-}
-.navigation-list-link:hover {
-  color: gold;
-}
-
-.navigation-list-link::after {
-  display: block;
-  position: absolute;
-  left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-  width: 0; /*задаём длинну линии до наведения курсора*/
-  height: 4px; /*задаём ширину линии*/
-  background-color: gold; /*задаём цвет линии*/
-  content: "";
-  transition: width 0.5s ease-out; /*задаём время анимации*/
-}
-
-a:hover:after,
-a:focus:after {
-  width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
-}
-
-.navigation-list-link:hover {
-  opacity: 1;
-}
-
-.mainPage {
-  display: flex;
+  flex-direction: row;
   justify-content: center;
-  flex-direction: column;
+  text-align: center;
+  background-color: white;
   width: 100%;
   height: 100%;
-  flex-grow: 1;
-  background: darkgrey;
 }
-.profile {
-  display: flex;
-  gap: 200px;
-}
-.avatar {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-}
-.profile-text {
+.aside {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 30%;
+  max-width: 400px;
+  min-height: 100%;
+  background-color: #232323;
+}
+.avatar {
+  box-sizing: border-box;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin-top: 50px;
+  border: 4px solid #05747b;
+}
+.aside-block {
+  width: 100%;
+}
+.aside-header {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 80%;
+  padding-left: 60px;
+  margin-left: -20px;
+  background-color: #05747b;
+  font-size: 30px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  gap: 20px;
+  font-size: 20px;
+}
+.contact-icon {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #05747b;
+}
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 10px;
+}
+.skills-list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  gap: 20px;
+  font-size: 20px;
+}
+.skill-description {
+  display: flex;
+  align-items: center;
+  width: 160px;
   gap: 20px;
 }
-.footer {
+.skills-icon {
+  width: 40px;
+  height: 40px;
+}
+.bar {
   display: flex;
-  height: 50px;
-  background-color: darkorange;
+  gap: 5px;
+  height: 20px;
+}
+.bar-none {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+}
+.bar-active {
+  box-sizing: border-box;
+  height: 20px;
+  width: 20px;
+  border: 1px solid white;
+  background-color: #05747b;
+}
+.language-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.language-list-item {
+  color: white;
+  font-size: 20px;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 600px;
+  min-height: 100%;
+  background-color: whitesmoke;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.section-block {
+  margin: 20px 40px 0;
+  font-size: 20px;
+}
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+.section-header::after {
+  content: "";
+  display: block;
+  margin-top: 10px;
+  height: 4px;
+  background: #05747b;
+  width: 100%;
+}
+.name-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 250px;
+  margin-top: 50px;
+  margin-right: -20px;
+  padding-left: 40px;
+  font-size: 50px;
+  color: white;
+  background-color: #05747b;
+}
+.first-name {
+  color: #232323;
+}
+.proffesion::before {
+  content: "";
+  display: block;
+  margin: 20px 0;
+  height: 4px;
+  background: #232323;
+  width: 100%;
+}
+.proffesion {
+  font-size: 30px;
+}
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.projects-item {
+  width: 70%;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+}
+.project-img {
+  width: 100%;
+  height: 100%;
+}
+.project-link {
+  border: 1px solid #232323;
+}
+.project-link:hover {
+  box-shadow: 0px 0px 5px 5px #232323;
 }
