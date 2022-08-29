@@ -39,7 +39,7 @@ function App() {
             </li>
             <li className="contact-list-item">
               <img className="contact-icon" alt="mail icons" src={iconMail}></img>
-              pechera20@gmail.com
+              <a href="mailto:pechera20@gmail.com">pechera20@gmail.com</a>
             </li>
             <li className="contact-list-item">
               <img className="contact-icon" alt="gitHub icons" src={iconGitHub}></img>
@@ -49,15 +49,15 @@ function App() {
             </li>
             <li className="contact-list-item">
               <img className="contact-icon" alt="telegram icons" src={iconTelegram}></img>
-              @pecheneg95
+              <a href="https://t.me/pecheneg95">@pecheneg95</a>
             </li>
             <li className="contact-list-item">
               <img className="contact-icon" alt="discord icons" src={iconDiscord}></img>
-              Pecheneg95#2758
+              <a href="https://discordapp.com/users/397463348196802563">Pecheneg95#2758</a>
             </li>
             <li className="contact-list-item">
               <img className="contact-icon" alt="linkedIn icons" src={iconLinkedIn}></img>
-              <a href="linkedin.com/in/artsiom-piachora" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/in/artsiom-piachora" target="_blank" rel="noopener noreferrer">
                 Artsiom Piachora
               </a>
             </li>
@@ -159,7 +159,7 @@ function App() {
             </li>
             <li className="skills-list-item">
               <div className="skill-description">
-                <img className="skills-icon" alt="discord icons" src={iconNode}></img>
+                <img className="skills-icon" alt="node.js icons" src={iconNode}></img>
                 Node.js
               </div>
               <div className="bar">
@@ -173,7 +173,7 @@ function App() {
 
             <li className="skills-list-item">
               <div className="skill-description">
-                <img className="skills-icon" alt="linkedin icons" src={iconHTTP}></img>
+                <img className="skills-icon" alt="http icons" src={iconHTTP}></img>
                 HTTP
               </div>
               <div className="bar">
